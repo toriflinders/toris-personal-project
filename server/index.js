@@ -28,10 +28,11 @@ const transporter = nodemailer.createTransport({
       pass: SERVER_PASS
     }
 })
+
 app.use(express.static(__dirname + '/../build'))
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../build/index.html'))
+// })
 massive({
   connectionString: CONNECTION_STRING,
   ssl: {rejectUnauthorized: false}

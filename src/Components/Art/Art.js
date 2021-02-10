@@ -15,9 +15,9 @@ class Art extends Component {
   }
   getArt = () => {
     // axios.get('/art')
-     axios.get(`/art/:${this.props.artist_id}`)
+    //  axios.get(`/art/:${this.props.artist_id}`)
     // might want to leave it with the ${1} because for now, I'll only want
-    // axios.get(`/art/${1}`)
+    axios.get(`/art/1`)
       .then(res => {
         console.log(res.data)
         this.setState({art: res.data})
