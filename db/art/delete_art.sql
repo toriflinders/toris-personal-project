@@ -1,0 +1,1 @@
+DELETE FROM art WHERE art_id = $1;

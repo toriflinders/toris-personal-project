@@ -1,0 +1,12 @@
+.checkout-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #538f77;
+  display: inline-block;
+}
+.checkout-container input {
+  margin: auto;
+  height: 40px;
+  width: 400px;
+  display: block;
+}

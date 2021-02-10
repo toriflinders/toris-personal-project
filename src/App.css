@@ -1,0 +1,60 @@
+.App {
+  position: fixed;
+  text-align: center;
+}
+h1 {
+  color: #095975;
+}
+input {
+  margin-bottom: 15px;
+  font-size: 16px;
+  height: 30px;
+  width: 350px;
+  color: #095975;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #264653;
+  outline: none;
+}
+button {
+  margin: 5px;
+  height: 30px;
+  width: 350px;
+  background-color: transparent;
+  border: 1px solid #264653;
+  border-radius: 20px;
+  color: #264653;
+  font-size: 16px;
+  outline: none;
+}
+button:hover {
+  background-color: #095975;
+  color: #538f77;
+}
+.nav-links {
+  text-decoration: none;
+  color: #095975;
+  font-size: 18pt;
+}
+.nav-links:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #095975;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #095975;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #095975;
+}
