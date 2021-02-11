@@ -38,10 +38,6 @@ button:hover {
 }
 .nav-links:hover {
   transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -57,4 +53,30 @@ button:hover {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #095975;
+}
+@media (max-width: 376px) {
+  .contact-container {
+    height: 150px;
+    width: 300px;
+  }
+  .about-container {
+    width: 325px;
+    height: 425px;
+  }
+  .announce-info input {
+    height: 150px;
+    width: 300px;
+  }
+}
+@media (min-width: 1025px) {
+  .contact-container {
+    margin-top: 20px;
+  }
+  .about-container {
+    margin-top: 20px;
+    height: 300px;
+  }
+  .announce-info input {
+    margin-top: 20px;
+  }
 }

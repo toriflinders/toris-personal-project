@@ -36,7 +36,7 @@ class Art extends Component {
   render(){
     // console.log(this.props.art)
     return(
-      <div className='art-container' style={{position: 'fixed', height: '95vh', width: '100vw', backgroundColor: '#538f77'}}>
+      <div className='art-container' style={{position: 'fixed', height: '95vh', width: '100vw', backgroundColor: '#538f77', overflow: 'scroll'}}>
         
         <h1>Purchasable Art</h1>
         <div className='art-flex' style={{ margin: 'auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>

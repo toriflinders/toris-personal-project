@@ -1,9 +1,34 @@
+.nav-links {
+  text-decoration: none;
+  font-size: 14pt;
+}
+.nav-links:hover {
+  transform: scale(1.5);
+}
+.contact-container {
+  margin: auto;
+  height: 100px;
+  width: 550px;
+  border: 2px solid #095975;
+  border-radius: 5px;
+}
+.about-container {
+  padding: 5px;
+  height: 200px;
+  width: 550px;
+  border: 2px solid #095975;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
 /* .profile-container {
+  overflow: scroll;
   height: 95vh;
   width: 100vw;
   background-color: #538f77;
   margin: 0;
   display: inline-block;
+  color: #095975;
 } */
 /* .profile-container nav {
   width: 100vw;
@@ -11,35 +36,3 @@
   align-items: center;
   justify-content: space-evenly;
 } */
-/* .nav-links {
-  text-decoration: none;
-  color: black;
-  font-size: 14pt;
-}
-.nav-links:hover {
-  transform: scale(1.5);
-} */
-/* .contact-container {
-  margin: auto;
-
-  height: 200px;
-  width: 550px;
-  border: 2px solid #095975;
-  border-radius: 5px;
-} */
-/* .about-container {
-  height: 200px;
-  width: 550px;
-  border: 2px solid #095975;
-  border-radius: 5px;
-  display: inline-flex;
-} */
-/* .other-container {
-  height: 300px;
-  width: 550px;
-  display: inline-flex;
-  border: 2px solid #095975;
-  border-radius: 5px;
-} */
-/* background-image: url("https://i.stack.imgur.com/yEQ6k.jpg");
-background-image: url("https://cutewallpaper.org/21/star-wars-background-space/Star-background-star-wars-7-Background-Check-All.jpg"); */

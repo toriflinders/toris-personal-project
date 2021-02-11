@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import Announcement from '../Announcement/Announcement';
+// import {withRouter, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getAnnounce, createAnnounce} from '../../redux/announcementsReducer';
 import {editAnnounce} from '../../redux/announcementsReducer';
@@ -65,8 +66,8 @@ class Announcements extends Component {
     // console.log(this.props)
     // console.log(this.state.announcements)
     return(
-      <div className='announce-container'>
-        <div className='announce-info'>
+      <div className='announce-container' style={{height: '100vh', width: '100vw', backgroundColor: '#538f77', overflow: 'scroll'}}>
+        <div className='announce-info' style={{width: '100vw', height: '100vh', alignContent: 'center'}}>
           <input 
             value={this.state.title}
             name='title'
@@ -83,7 +84,8 @@ class Announcements extends Component {
             placeholder='Leave this blank, just logs time'
             onChange={event => this.handleInput(event)} />
           <button onClick={this.createAnnouncement}>Add Post</button>
-          <div className='recent'>
+          {/* <Link to='/auth'>Auth</Link> */}
+          <div className='recent' style={{ margin: 'auto', fontSize: '24pt', color: '#095975'}}>
             <p>Recent Posts</p>
           </div>
           <div>
@@ -108,6 +110,7 @@ const mapStateToProps = reduxState => {
 }
 
 export default connect(mapStateToProps, {getAnnounce, createAnnounce, editAnnounce, deleteAnnounce})(Announcements);
+// export default withRouter(connect(mapStateToProps, {getAnnounce, createAnnounce, editAnnounce, deleteAnnounce})(Announcements));
 
 
 // would I put the boolean related to admin in this component?

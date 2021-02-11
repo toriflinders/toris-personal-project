@@ -1,30 +1,4 @@
-.edit-container {
-  margin: auto;
-  height: 150px;
-  width: 100vw;
-  color: #264653;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.title {
-  height: 50px;
-  width: 250px;
-  background-color: #095975;
-  border: 2px solid #538f77;
-  color: #2a94b8;
-  border-radius: 10px;
-}
-.content {
-  height: 50px;
-  width: 250px;
-  background-color: #095975;
-  border: 2px solid #538f77;
-  color: #2a94b8;
-  border-radius: 10px;
-}
-.dateCreated {
+.input-flex {
   height: 50px;
   width: 250px;
   background-color: #095975;

@@ -10,14 +10,14 @@ const Announcement = (props) => {
   return (
     <div key={announcement.announce_id}>
       {!editToggle ? (
-        <div className='edit-container'>
-          <div className='title'>
+        <div className='edit-container' style={{margin: 'auto', height: '150px', width: '100vw', color: '#264653', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          <div className='input-flex'>
             {announcement.title}
           </div>
-          <div className='content'>
+          <div className='input-flex'>
             {announcement.content}
           </div>
-          <div className='dateCreated'>
+          <div className='input-flex'>
             {announcement.date_created}
           </div>
           <button onClick={() => setEditToggle(true)}>Edit Post</button> 

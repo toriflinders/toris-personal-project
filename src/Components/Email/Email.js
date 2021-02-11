@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {Component} from 'react';
-import './Email.css';
+// import './Email.css';
 
 class Email extends Component {
   constructor(props){
@@ -25,27 +25,24 @@ class Email extends Component {
 
   render(){
     return(
-      <div className='email-container' style={{ height: '100vh', width: '100vw', backgroundColor: '#538f77', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <h1 style={{margin: '50px'}}>Email the Artist</h1>
+      <div className='email-container' style={{height: '100vh', width: '100vw', backgroundColor: '#538f77', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <h1>Email the Artist</h1>
         <input 
           value={this.state.emailFrom}
           name='emailFrom'
-          placeholder='Email Input'
+          placeholder='Your Email'
           onChange={e => this.handleInput(e)}
-          style={{height: '20px', width: '500px'}}  />
+          style={{margin: '100px', width: '300px', display: 'block'}} />
         <input 
           value={this.state.content}
           name='content'
-          id='content' 
-          placeholder='Content Input'
-          onChange={e => this.handleInput(e)}
-          style={{ height: '300px', width: '500px'}}  />
-        <button onClick={this.handleSubmit} style={{marginTop: '30px'}}>Send Email</button>
+          placeholder='Enter Content Here'
+          onChange={e => this.handleInput(e)} 
+          style={{margin: '100px', width: '300px', display: 'block'}} />
+        <button onClick={this.handleSubmit}>Send Email</button>
       </div>
     )
   }
 }
 
 export default Email;
-
-
