@@ -18,7 +18,11 @@ class Announcements extends Component {
       title: '',
       content: '',
       dateCreated: '',
+      adminView: false
     }
+  }
+  handleToggle = () => {
+    this.setState({adminView: !this.state.adminView})
   }
   getUserAnnouncements = () => {
     // console.log(this.props)
@@ -66,7 +70,7 @@ class Announcements extends Component {
     // console.log(this.props)
     // console.log(this.state.announcements)
     return(
-      <div className='announce-container' style={{height: '100vh', width: '100vw', backgroundColor: '#538f77', overflow: 'scroll'}}>
+      <div className='announce-container' style={{height: '100vh', width: '100vw', backgroundColor: '#538f77'}}>
         <div className='announce-info' style={{width: '100vw', height: '100vh', alignContent: 'center'}}>
           <input 
             value={this.state.title}
@@ -85,12 +89,12 @@ class Announcements extends Component {
             onChange={event => this.handleInput(event)} />
           <button onClick={this.createAnnouncement}>Add Post</button>
           {/* <Link to='/auth'>Auth</Link> */}
-          <div className='recent' style={{ margin: 'auto', fontSize: '24pt', color: '#095975'}}>
-            <p>Recent Posts</p>
+          <div className='recent' style={{ margin: 'auto', fontSize: '24pt', color: '#215e47'}}>
+            <b style={{marginLeft: '40px'}}>Recent Posts</b>
           </div>
           <div>
             {this.state.announcements.map(announcement => (
-              <Announcement announcement={announcement} editAnnouncement={this.editAnnouncement} deleteAnnouncement={this.deleteAnnouncement}/>
+              <Announcement announcement={announcement} editAnnouncement={this.editAnnouncement} deleteAnnouncement={this.deleteAnnouncement} />
             ))}
           </div>
         </div>

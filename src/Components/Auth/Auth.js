@@ -30,7 +30,7 @@ class Auth extends Component {
       axios.post('/auth/register', {username, email, password})
         .then(res => {
           this.props.getUser(res.data)
-          this.props.history.push('/announcements')
+          this.props.history.push('/')
         })
         .catch(err => console.log(err))
     } else {
@@ -43,7 +43,7 @@ class Auth extends Component {
     axios.post('/auth/login', {email, password})
       .then(res => {
         this.props.getUser(res.data)
-        this.props.history.push('/announcements')
+        this.props.history.push('/')
       })
       .catch(err => console.log(err))
   }

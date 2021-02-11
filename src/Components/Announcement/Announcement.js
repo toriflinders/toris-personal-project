@@ -8,7 +8,7 @@ const Announcement = (props) => {
   const [content, setContent] = useState('')
   const [dateCreated, setDateCreated] = useState('')
   return (
-    <div key={announcement.announce_id}>
+    <div key={announcement.announce_id} style={{overflow: 'scroll', margin: '10px', padding: '15px'}}>
       {!editToggle ? (
         <div className='edit-container' style={{margin: 'auto', height: '150px', width: '100vw', color: '#264653', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center'}}>
           <div className='input-flex'>
