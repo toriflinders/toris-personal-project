@@ -10,7 +10,7 @@ import Email from './Components/Email/Email';
 export default (
   <Switch>
     <Route exact path='/' component={Profile} />
-    <Route path='/auth' component={Auth} />
+    <Route path='/login' component={Auth} />
     <Route path='/announcements' component={Announcements} />
     <Route path='/art' component={Art} />
     <Route path='/checkout/:art_id' component={Checkout} />
